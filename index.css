@@ -1,0 +1,85 @@
+.mask{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.7);
+}
+.frame{
+  width: 7.1rem;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  margin-left: -3.6rem;
+ /* transform: translate(-50%,-50%);*/
+  z-index: 99;
+  border: 4px solid #ff2926;
+  border-radius: 2%;
+  background: #fff;
+  /*display: none;*/
+}
+.wraper{
+  width: 7.1rem;
+  max-height: 9rem;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:auto;
+}
+.wraper::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.wraper::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  background-color: #ddd;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+.wraper ::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background: #535353;
+}
+.fr_tab{
+  width: 6.9rem;
+  border-collapse: collapse;
+  margin: auto;
+  text-align: center;
+}
+
+.frame th{
+  font:600 .18rem/.3rem "microsoft yahei";
+  color:#ff2926;
+  background: #fff587;
+  width: 12.5%;
+  border:1px solid #ff2926;
+}
+.frame .fr_tab tr th:nth-child(1){
+  width: 14.5%;
+}
+.frame .fr_tab tr th:nth-child(2){
+  width: 10.5%;
+}
+.frame td{
+  padding-top: .1rem;
+  padding-bottom: .1rem;
+  border:1px solid #ff2926;
+  background: #fff;
+  font:400 .16rem/.22rem "microsoft yahei";
+  color:#000;
+}
+.frame td.c_pink{
+  background: #ffc8c7;
+}
+.frame .fr_close{
+  width: .35rem;
+  height: .35rem;
+  position: absolute;
+  right: -.16rem;
+  top: -.16rem;
+  background: url(../images/close_a.png) no-repeat center;
+  -webkit-background-size: .35rem;
+  background-size: .35rem;
+}
