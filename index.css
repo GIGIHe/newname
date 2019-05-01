@@ -25,7 +25,7 @@
   padding-top: .2rem;
   padding-bottom: .2rem;
   overflow-y: auto;
-  -webkit-overflow-scrolling:auto;
+  -webkit-overflow-scrolling:scroll;
 }
 .wraper::-webkit-scrollbar {/*滚动条整体样式*/
   width: 10px;     /*高宽分别对应横竖滚动条的尺寸*/
